@@ -2,7 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/registerTitle"
@@ -21,6 +22,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Email"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/registerTitle"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +35,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/registerEmail"
         app:layout_constraintStart_toStartOf="parent"
