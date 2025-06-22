@@ -13,22 +13,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyBuddy"
         tools:targetApi="31">
-
-        <!-- Launcher screen: LoginActivity -->
+        <activity
+            android:name=".ProgressDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PomodoroActivity"
+            android:exported="false" /> <!-- Launcher screen: LoginActivity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Main screen -->
+        </activity> <!-- Main screen -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>

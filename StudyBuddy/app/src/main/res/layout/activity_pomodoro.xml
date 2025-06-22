@@ -5,66 +5,68 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/mainTitle"
+        android:id="@+id/pomodoroTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to StudyBuddy"
-        android:textSize="22sp"
+        android:text="Pomodoro Timer"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/pomodoroTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="48dp" />
 
     <Button
-        android:id="@+id/viewProgressButton"
+        android:id="@+id/startButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="View Progress Dashboard"
-        app:layout_constraintTop_toBottomOf="@id/mainTitle"
+        android:text="Start"
+        app:layout_constraintTop_toBottomOf="@id/timerText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp" />
 
     <Button
-        android:id="@+id/startTimerButton"
+        android:id="@+id/pauseButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Start Pomodoro Timer"
-        app:layout_constraintTop_toBottomOf="@id/viewProgressButton"
+        android:text="Pause"
+        app:layout_constraintTop_toBottomOf="@id/startButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="75dp" />
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/viewAnalyticsButton"
+        android:id="@+id/resetButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="View Analytics"
-        app:layout_constraintTop_toBottomOf="@id/startTimerButton"
+        android:text="Reset"
+        app:layout_constraintTop_toBottomOf="@id/pauseButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/viewRewardsButton"
+        android:id="@+id/backButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="View Rewards"
-        app:layout_constraintTop_toBottomOf="@id/viewAnalyticsButton"
+        android:text="Back to Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp" />
-
-    <Button
-        android:id="@+id/exitButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Exit"
-        app:layout_constraintTop_toBottomOf="@id/viewRewardsButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="75dp" />
+        android:layout_marginBottom="24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
